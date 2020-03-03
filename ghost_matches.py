@@ -43,6 +43,18 @@ Allowed Languages: Bash, C, C++, C++14, Clojure, C#, D, Erlang, F#, Go, Groovy, 
 
 
  '''
+test=int(input())
+for _ in range (test):
+    player=int(input())
+    
+    if player==0:
+        print(0)
+        
+    else:
+        print(player-1)
+
+
+"""or"""
 
 test=int(input())
 
@@ -60,5 +72,3 @@ for _ in range (test):
         if players>1:
             players-=1
             ans+=1
-            
-    print(int(ans))
