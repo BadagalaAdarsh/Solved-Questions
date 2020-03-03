@@ -77,7 +77,7 @@ for _ in range (test):
             break
     if abc!=1:
         
-        
+        #zip is a fuction used to change rows to columns and columns to rows in python list
         check=zip(*check)
         
         count=0
