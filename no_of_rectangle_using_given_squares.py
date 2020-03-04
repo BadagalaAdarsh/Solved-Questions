@@ -66,4 +66,55 @@ for _ in range (test):
             height+=1
             
     print(ans)
+
+
+'''================above is my code === even it got accepts == in web site it shows partially solved============'''
+
+T = int(input())
+for i in range(T):
+    S = int(input())
+    numberOfWays = 0
+    for j in range(1, int(S ** 0.5) + 1):
+        numberOfWays += int(S / j) - (j - 1)
+    print(numberOfWays)
+
+''' ===============this is one of best solutin in hackerearth website================='''
+
+    import math
+    for _ in range(int(input())):
+        N = int(input())
+        count = 0
+        for i in range(1,math.floor(math.sqrt(N))+1):
+            count+=int(N/i)-i+1
+        print(count)
+
+'''=================this too is one of best solution in hackerearth in website ================'''
+import math
+ 
+N = int(input())
+for _ in range(N):
+    square = int(input())
+    count = 0
+    for each in range(1, int(math.sqrt(square))+1):
+        count += (square // each) - (each-1)
+    print(count)
+'''==================these all are better than my solution and the one given in geeks for geeks website==============='''
+
+def test():
+    n = int(input())
+    res = 0
+    i = 1
+    while(n/i >= i):
+        res += n//i - (i-1)
+        i+=1
+    print(res)
+ 
+t = int(input())
+while(t):
+    t-=1
+    test()
+
+'''========================================================================'''
+
+
             
